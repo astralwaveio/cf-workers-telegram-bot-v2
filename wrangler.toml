@@ -1,0 +1,20 @@
+name = "cf-workers-telegram-bot-v2"
+main = "packages/worker/src/worker.ts"
+
+workers_dev = true
+compatibility_date = "2024-11-11"
+
+[ai]
+binding = "AI"
+
+[observability.logs]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cf-workers-telegram-bot-v2"
+database_id = "b6514a1b-a8b7-4b6d-87b0-9c1b62eb17a7"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "cf-workers-telegram-bot-v2"
